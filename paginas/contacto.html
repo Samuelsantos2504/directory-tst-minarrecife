@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../imagenes/MinaArrecifeOscuro.ico">
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la página -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--Estilos Propios-->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+
+    <!-- Los iconos tipo Solid de Fontawesome -->
+    <script src="https://kit.fontawesome.com/6a524a0611.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="muestraContacto"></div>
+    <div class="contactanos">
+        <div class="formularioContacto">
+            <formn method="POST" action="envioCorreo.php">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+                    <input type="text" name="Nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Correo</label>
+                    <input type="email" name="Correo" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Telefono</label>
+                    <input type="number" name="Telefono" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" name="Mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Contactar</button>
+            </form>
+        </div>
+        <div class="informaContacto">
+            <h1> Contactanos</h1>
+            <h3>Nos encanta darte la bienvenida a MINA ARRECIFE</h3>
+            <div class="coreoInfo"><i class="fa-regular fa-envelope fa-xl"></i><h3>MinaArrecife@Gmail.com</h3></div>
+            <div class="coreoInfo"><i class="fa-solid fa-phone fa-xl"></i><h3>321 4528140</h3></div>
+            <h3>Redes</h3>
+            <div class="redesContac">
+                <li href="#" class="icon-box tiktok">
+                    <i class="fa-brands fa-tiktok fa-2xl"></i>
+                </li>
+                <li href="#" class="icon-box instagram">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <li href="#" class="icon-box whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </li>
+            </div>
+        </div>
+        
+    </div>
+    <div id="footer-placeholder"></div>
+    
+
+</body>
+<script src="../js/inicio.js"></script>
+<script src="../js/animaContacto.js"></script>
+
+</html>
