@@ -284,13 +284,18 @@ body{
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.textoPrincipal{
+.textoPrincipal {
     width: 55%;
     margin-top: 20px;
     padding: 20px;
-    font-family: 'Beba';
+    font-family: 'Beba' !important;
     
 }
+
+.textoPrincipal p{
+    font-family: 'Beba';
+}
+
 .imagenprincipal, .textoPrincipal {
     opacity: 0;
     transition: all 0.8s ease-in-out;
