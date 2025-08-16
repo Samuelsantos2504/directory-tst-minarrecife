@@ -284,12 +284,7 @@ body{
     width: 55%;
     margin-top: 20px;
     padding: 20px;
-    font-family: "Bebas Neue";
-    
-}
-
-.textoPrincipal p{
-    font-family: "Bebas Neue";
+    font-family: 'Bebas Neue' !important;
 }
 
 .imagenprincipal, .textoPrincipal {
@@ -314,7 +309,6 @@ body{
     margin-right: 75px;
     text-align: justify;
     font-size: 1.5rem;
-    
 }
 .textoPrincipal a{
     margin-top: 10px;
