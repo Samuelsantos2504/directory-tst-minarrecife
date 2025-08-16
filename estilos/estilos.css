@@ -11,10 +11,6 @@
     font-family: 'Vag';
     src:url(../fuentes/VAG.ttf);
 }
-@font-face {
-    font-family: 'Beba';
-    src: url(../fuentes/BebasNeue.otf);
-}
 
 *{
     padding: 0;
@@ -288,12 +284,12 @@ body{
     width: 55%;
     margin-top: 20px;
     padding: 20px;
-    font-family: 'Beba' !important;
+    font-family: "Bebas Neue";
     
 }
 
 .textoPrincipal p{
-    font-family: 'Beba';
+    font-family: "Bebas Neue";
 }
 
 .imagenprincipal, .textoPrincipal {
@@ -325,7 +321,7 @@ body{
 }
 center h2{
     padding: 45px;
-    font-family: 'Beba';
+    font-family: "Bebas Neue";
     font-size: 3rem;
     background-image: url(../imagenes/fondomili.jpg);
 }
@@ -366,12 +362,12 @@ center h2{
 
 .Productcard h2{
     margin-top: 10px;
-    font-family: 'Beba';
+    font-family: "Bebas Neue";
 }
 .Productcard button{
     margin-top: 10px;
     width: 160px;
-    font-family: 'Beba';
+    font-family: "Bebas Neue";
 }
 
 .Productcard button a{
