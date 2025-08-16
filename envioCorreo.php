@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = ValidacionCampo($_POST["Nombre"]);
     $email = ValidacionCampo($_POST["Correo"]);
     $Contact = ValidacionCampo($_POST["Telefono"]);
+    $Message = ValidacionCampo($_POST["Mensaje"]);
 
     $to = "samuelsantosb102504@gmail.com";
     $subject = "Nuevo contacto desde la página web";
@@ -23,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p><strong>Nombre:</strong> $name</p>
         <p><strong>Correo:</strong> $email</p>
         <p><strong>Teléfono de Contacto:</strong> $Contact</p>
+        <p><strong>Teléfono de Contacto:</strong> $Message</p>
     </body>
     </html>
     ";
