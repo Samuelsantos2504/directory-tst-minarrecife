@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     
     fetch("../paginas/header.html")
         .then(response => response.text())

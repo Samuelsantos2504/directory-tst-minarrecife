@@ -12,12 +12,3 @@ document.addEventListener("DOMContentLoaded", () => {
         precache.src = img.src;
       });
 });
-
-//Codigo para reconocer el redireccionamiento 
-
-const keyWord = "paginas";
-
-if (window.location.href.includes(keyWord)) {
-  // Si la URL contiene la palabra clave, redirigir a la página de inicio
-  window.location.href = "./";
-}
