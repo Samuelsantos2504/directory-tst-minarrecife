@@ -968,6 +968,11 @@ input {
     .imgNosotros{
         height: 42rem;
     }
+
+    .texto_pagina{
+        width: 100%;
+    }
+
     .imgNosotros h2,
     .imgNosotros p {
         text-align: center;

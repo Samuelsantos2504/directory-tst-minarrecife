@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Detalles del contacto</h2>
         <p><strong>Nombre:</strong> $name</p>
         <p><strong>Correo:</strong> $email</p>
-        <p><strong>Teléfono de Contacto:</strong> $Contact</p>
-        <p><strong>Teléfono de Contacto:</strong> $Message</p>
+        <p><strong>Teléfono de Contacto :</strong> $Contact</p>
+        <p><strong>Mensaje del usuario :</strong> $Message</p>
     </body>
     </html>
     ";
