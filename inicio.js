@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    fetch("../paginas/header.html")
+    fetch("./paginas/header.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header-placeholder").innerHTML = data;
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error al cargar el header:", error));
 
 
-    fetch("../paginas/footer.html") 
+    fetch("./paginas/footer.html") 
     .then(response => {
         if (!response.ok) {
             throw new Error("Error al cargar el footer");

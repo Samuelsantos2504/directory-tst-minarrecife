@@ -1008,7 +1008,7 @@ input {
         padding: 20px;
     }
     .mostrarProductos-container {
-        justify-items: center;
+        justify-content: center;
         align-items: center;
     }
 }
