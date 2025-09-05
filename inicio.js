@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    fetch("../paginas/header.html")
+    fetch("./paginas/headerL.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header-placeholder").innerHTML = data;
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error al cargar el header:", error));
 
 
-    fetch("../paginas/footer.html") 
+    fetch("./paginas/footerL.html") 
     .then(response => {
         if (!response.ok) {
             throw new Error("Error al cargar el footer");
@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     animateOnView(".imagenprincipal, .textoPrincipal", "active", 0.3);
-    animateOnView(".Productcard", "show", 0.3);
     animateOnView(".demostra", "show", 0.3);
     animateOnView(".formula", "show", 0.3);
     animateOnView(".text-contacto", "show", 0.03);
@@ -99,23 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
             carousel.style.transform = `translateX(${translateX}px)`;
         };
     }
-
-    // Swiper.js (automático)
-    new Swiper(".mySwiper", {
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 15,
-            stretch: 0,
-            depth: 300,
-            modifier: 1,
-        },
-        loop: true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-        },
-    });
 
 });

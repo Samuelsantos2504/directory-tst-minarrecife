@@ -8,7 +8,14 @@ const productos = [
     { titulo: "Base", imagen: "../imagenes/DSC00270.JPG", descripcion: "1 1/2" },
     { titulo: "Base", imagen: "../imagenes/DSC00286.JPG", descripcion: "1 1/2 Norma invias" },
     { titulo: "Piedra filtro", imagen: "../imagenes/DSC00309.JPG", descripcion: "2 a 5 Pulgadas" },
-    { titulo: "Nose", imagen: "../imagenes/logo-pse.png", descripcion: "Descripción de Nose" }
+    { titulo: "Nose1", imagen: "../imagenes/IMG_3455.JPG", descripcion: "Descripción de Nose" },
+    { titulo: "Nose2", imagen: "../imagenes/IMG_3456.JPG", descripcion: "Descripción de Nose" },
+    { titulo: "Nose3", imagen: "../imagenes/IMG_3469.JPG", descripcion: "Descripción de Nose" },
+    { titulo: "Nose4", imagen: "../imagenes/IMG_3472.JPG", descripcion: "Descripción de Nose" },
+    { titulo: "Nose5", imagen: "../imagenes/IMG_3473.JPG", descripcion: "Descripción de Nose" },
+    { titulo: "Nose6", imagen: "../imagenes/IMG_3484.JPG", descripcion: "Descripción de Nose" },
+    { titulo: "Nose7", imagen: "../imagenes/IMG_3693.JPG", descripcion: "Descripción de Nose" },
+    { titulo: "Nose8", imagen: "../imagenes/IMG_3731.JPG", descripcion: "Descripción de Nose" }
 ];
 
 const container = document.getElementById('productos-container');

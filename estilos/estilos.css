@@ -19,9 +19,16 @@
     text-decoration: none;
     list-style: none;
 }
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body{
     font-family: 'Vag';
     background-color: var(--color-blanco);
+    overflow-x: hidden;
 }
 
 
@@ -133,6 +140,12 @@ body{
     text-align: center;
 }
 
+[data-aos] {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .texto-overlay h2 {
     font-size: 2.5rem;
     margin: 10px 0 10px;
@@ -149,7 +162,7 @@ body{
     position: fixed;
     right: 0;
     top: 50%;
-    margin: 0px -12%;
+    margin: 0px -10%;
     animation: slideIn 1s ease forwards; 
 }
 
@@ -843,7 +856,7 @@ input {
 
 .mostrarProductos-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     gap: 1rem; 
     flex-wrap: wrap; 
     margin-top: 40px;
