@@ -2,33 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Logo -->
-    <link rel="icon" href="./imagenes/MinaArrecifeOscuro.ico">
-    <title>Inicio | Mina Arrecife</title>
+  <!-- Logo -->
+  <link rel="icon" href="./imagenes/MinaArrecifeOscuro.ico">
+  <title>Inicio | Mina Arrecife</title>
 
-    <!-- FRAMEWORK BOOTSTRAP para el estilo de la página -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&ampdisplay=swap" rel="stylesheet">
+  <!-- Preload  -->
+  <link rel="preload" href="./estilos/estilos.css?v=1.0.5" as="style">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" as="style">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
 
+  <!-- Swiper CSS -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
 
-    <!--Estilos Propios-->
-    <link rel="stylesheet" href="./estilos/estilos.css?v=1.0.4">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <!-- Los iconos tipo Solid de Fontawesome -->
-    <script src="https://kit.fontawesome.com/6a524a0611.js" crossorigin="anonymous"></script>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./estilos/estilos.css?v=1.0.5">
+  <script src="https://kit.fontawesome.com/6a524a0611.js" crossorigin="anonymous" defer></script>
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+  <!-- AOS CSS -->
+  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.rel='stylesheet'">
 </head>
+
+<script src="./inicio.js" defer></script>
+<script src="./js/precharge.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script>
+<script>
+    window.addEventListener("load", function() {
+        var s = document.createElement("script");
+        s.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
+        s.onload = function(){ AOS.init(); };
+        document.body.appendChild(s);
+    });
+</script>
 
 <body>
 
@@ -37,7 +51,7 @@
     <div class="slider-box">
         <ul>
             <li>
-                <img src="./imagenes/imagenSlide1.JPG" alt="Imagen 1">
+                <img alt="Imagen 1" src="./imagenes/imagenSlide1.webp">
                 <div class="text-overlay">
                     <h2>MINA ARRECIFE</h2>
                     <p>Que Esperas para Contactar a la Mejor Empresa de Constructores</p>
@@ -45,7 +59,7 @@
                 </div>
             </li>
             <li>
-                <img src="./imagenes/imagenSlide2.JPG" alt="Imagen 2">
+                <img alt="Imagen 2" src="./imagenes/imagenSlide2.webp">
                 <div class="text-overlay">
                     <h2>MINA ARRECIFE</h2>
                     <p>Que Esperas para Contactar a la Mejor Empresa de Constructores</p>
@@ -53,7 +67,7 @@
                 </div>
             </li>
             <li>
-                <img src="./imagenes/imagenSlide3.JPG" alt="Imagen 3">
+                <img alt="Imagen 3" src="./imagenes/imagenSlide3.webp">
                 <div class="text-overlay">
                     <h2>MINA ARRECIFE</h2>
                     <p>Que Esperas para Contactar a la Mejor Empresa de Constructores</p>
@@ -61,7 +75,7 @@
                 </div>
             </li>
             <li>
-                <img src="./imagenes/imagenSlide4.JPG" alt="Imagen 4">
+                <img alt="Imagen 4" src="./imagenes/imagenSlide4.webp">
                 <div class="text-overlay">
                     <h2>MINA ARRECIFE</h2>
                     <p>Que Esperas para Contactar a la Mejor Empresa de Constructores</p>
@@ -88,7 +102,7 @@
 
     <div class="ServiciosEmpresa">
         <div class="imagenprincipal active">
-            <img src="../imagenes/Prncipal.JPG">
+            <img src="./imagenes/Prncipal.webp">
 
         </div>
         <div class="textoPrincipal active">
@@ -243,7 +257,7 @@
                 <p>
                 <h6>Deja tus datos y recibe <br>más información </h6>
                 </p>
-                <form action="../envioCorreo.php" method="POST">
+                <form action="./envioCorreo.php" method="POST">
                     <div class="input-group">
                         <label for="name">Nombre y Apellido <b>*</b></label>
                         <input type="text" id="name" name="Nombre" required>
@@ -285,8 +299,4 @@
 
 
 </body>
-<script src="./inicio.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="./js/precharge.js"></script>
-<script> AOS.init(); </script>
 </html>
