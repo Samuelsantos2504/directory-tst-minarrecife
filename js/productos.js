@@ -1,21 +1,19 @@
 const productos = [
-    { titulo: "Arena de rio", imagen: "../imagenes/DSC00268.JPG" },
-    { titulo: "Material zarandeado", imagen: "../imagenes/DSC00290.JPG" },
-    { titulo: "Crudo de rio", imagen: "../imagenes/DSC00273.JPG" },
-    { titulo: "Piedra Gavion", imagen: "../imagenes/DSC00284.JPG", descripcion: "8 a 5 Pulgadas" },
-    { titulo: "Triturado", imagen: "../imagenes/DSC00276.JPG" },
-    { titulo: "Triturado", imagen: "../imagenes/DSC00272.JPG", descripcion: "3/4" },
-    { titulo: "Base", imagen: "../imagenes/DSC00270.JPG", descripcion: "1 1/2" },
-    { titulo: "Base", imagen: "../imagenes/DSC00286.JPG", descripcion: "1 1/2 Norma invias" },
-    { titulo: "Piedra filtro", imagen: "../imagenes/DSC00309.JPG", descripcion: "2 a 5 Pulgadas" },
-    { titulo: "Nose1", imagen: "../imagenes/IMG_3455.JPG", descripcion: "Descripción de Nose" },
-    { titulo: "Nose2", imagen: "../imagenes/IMG_3456.JPG", descripcion: "Descripción de Nose" },
-    { titulo: "Nose3", imagen: "../imagenes/IMG_3469.JPG", descripcion: "Descripción de Nose" },
-    { titulo: "Nose4", imagen: "../imagenes/IMG_3472.JPG", descripcion: "Descripción de Nose" },
-    { titulo: "Nose5", imagen: "../imagenes/IMG_3473.JPG", descripcion: "Descripción de Nose" },
-    { titulo: "Nose6", imagen: "../imagenes/IMG_3484.JPG", descripcion: "Descripción de Nose" },
-    { titulo: "Nose7", imagen: "../imagenes/IMG_3693.JPG", descripcion: "Descripción de Nose" },
-    { titulo: "Nose8", imagen: "../imagenes/IMG_3731.JPG", descripcion: "Descripción de Nose" }
+    { titulo: "Arena de rio", imagen: "../imagenes/DSC00268.webp" },
+    { titulo: "Material zarandeado", imagen: "../imagenes/DSC00290.webp" },
+    { titulo: "Crudo de rio", imagen: "../imagenes/DSC00273.webp" },
+    { titulo: "Piedra Gavion", imagen: "../imagenes/DSC00284.webp", descripcion: "8 a 5 Pulgadas" },
+    { titulo: "Triturado", imagen: "../imagenes/DSC00276.webp" },
+    { titulo: "Triturado", imagen: "../imagenes/DSC00272.webp", descripcion: "3/4" },
+    { titulo: "Base", imagen: "../imagenes/DSC00270.webp", descripcion: "1 1/2" },
+    { titulo: "Base", imagen: "../imagenes/DSC00286.webp", descripcion: "1 1/2 Norma invias" },
+    { titulo: "Piedra filtro", imagen: "../imagenes/DSC00309.webp", descripcion: "2 a 5 Pulgadas" },
+    { titulo: "Excavadora", imagen: "../imagenes/IMG_3455.webp" },
+    { titulo: "Camión de carga", imagen: "../imagenes/IMG_3469.webp"},
+    { titulo: "volqueta", imagen: "../imagenes/IMG_3472.webp" },
+    { titulo: "Cargador frontal", imagen: "../imagenes/IMG_3484.webp" },
+    { titulo: "Retroexcavadora", imagen: "../imagenes/IMG_3693.webp" },
+    { titulo: "Camión volquete", imagen: "../imagenes/IMG_3731.webp"}
 ];
 
 const container = document.getElementById('productos-container');
