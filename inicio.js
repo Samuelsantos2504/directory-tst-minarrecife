@@ -1,39 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    // Ocultamos el slider hasta que el header esté listo
-    const sliderBox = document.querySelector(".slider-box");
-    if (sliderBox) {
-        sliderBox.style.opacity = "0";
-        sliderBox.style.transition = "opacity 0.5s ease";
-    }
-
+    
     fetch("./paginas/headerL.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header-placeholder").innerHTML = data;
-
-            // ✅ Ahora que el header está cargado, mostramos el slider
-            if (sliderBox) {
-                requestAnimationFrame(() => {
-                    sliderBox.style.opacity = "1";
-                });
-            }
         })
         .catch(error => console.error("Error al cargar el header:", error));
 
-    fetch("./paginas/footerL.html") 
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Error al cargar el footer");
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById("footer-placeholder").innerHTML = data;
-        })
-        .catch(error => console.error("Error al cargar el footer:", error));    
 
-    // 👇 Tu código de animaciones y observers queda igual
+    fetch("./paginas/footerL.html") 
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Error al cargar el footer");
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+    })
+    .catch(error => console.error("Error al cargar el footer:", error));    
+
+    // Animación genérica para mostrar elementos al entrar en vista
     const animateOnView = (selector, animationClass = "show", threshold = 0.3) => {
         const elements = document.querySelectorAll(selector);
         const observer = new IntersectionObserver((entries, observerInstance) => {
@@ -79,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    // Observer para activar los contadores
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -91,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     statsObserver.observe(document.querySelector(".muestra_lider"));
 
+    // Carousel manual
     const carousel = document.getElementById("carousel");
     if (carousel) {
         const images = carousel.querySelectorAll("img");
